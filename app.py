@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    print("Solicitud recibida en la ruta /")
+    print("Solicitud recibida en la ruta /", file=sys.stdout)
     return 'Hola Mundo8888!'
 
 if __name__ == '__main__':
